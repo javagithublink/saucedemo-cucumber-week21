@@ -14,7 +14,7 @@ public class Hooks extends Utility {
     @Before
     public void setUp(){
         selectBrowser(PropertyReader.getInstance().getProperty("browser"));
-        Reporter.assignAuthor("Kinjal");
+        Reporter.assignAuthor("Jimil");
     }
     @After
     public void tearDown(Scenario scenario){
@@ -27,6 +27,6 @@ public class Hooks extends Utility {
                 e.printStackTrace();
             }
         }
-        //closeBrowser();
+        closeBrowser();
     }
 }
